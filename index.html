@@ -13,14 +13,17 @@
     <!-- Resources -->
     <script src="https://cdn.amcharts.com/lib/4/core.js"></script>
     <script src="https://cdn.amcharts.com/lib/4/charts.js"></script>
+    <script src="https://cdn.amcharts.com/lib/4/themes/dark.js"></script>
     <script src="https://cdn.amcharts.com/lib/4/themes/animated.js"></script>
 </head>
+
 <body>
     <main>
-        <div class="container px-4">
-            <div class="row gx-5">
-                <div class="col">
-                    <div class="p-3 border bg-light">
+        <div class="container px-4 py-4">
+            <h1>Kalorienzähler</h1>
+            <div class="row">
+                <div class="col-4 custom-padding">
+                    <div>
                         <form>
                             <div class="form-group">
                                 <label for="koerpergroesse">Körpergröße</label>
@@ -80,25 +83,14 @@
                         </form>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="p-3 border bg-light">
-                        </section>
-                        <h3>Grundumsatz</h3>
-                        <div id="grundUmsatzOutput">
-                        </div>
-                        <h3>Gesamtumsatz</h3>
-                        <div id="gesamtUmsatzOutput">
-                        </div>
-                        <div id="chartdiv">
-                        </div>
-                        <section>
+                <div class="col-8 pl-5">
+                    <div id="chartdiv" class="p-3">
                     </div>
                 </div>
             </div>
         </div>
     </main>
     <script src="assets/js/main.js"></script>
-    <script src="assets/js/chart.js"></script>
 </body>
 
 </html>
